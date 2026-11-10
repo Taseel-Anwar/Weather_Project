@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    
+    <div class="app-container">
+      <h1>Weather Forecasting</h1>
+      <p class="subtitle">Enter a city name to get the latest weather updates.</p>
+
+      
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name...">
+        <button id="searchBtn">Search</button>
+      </div>
+
+    
+      <div class="recent-searches">
+        <h3>Recent Searches</h3>
+        <div id="recentList">
+    
+          <button type="button">New York</button>
+          <button type="button">Los Angeles</button>
+          <button type="button">Chicago</button>
+        </div>
+      </div>
+
+     
+      <div class="error-box" id="errorMsg" style="display: none;">
+        <p>City not found. Please try again.</p>
+      </div>
+
+      <div class="weather-info" id="weatherCard">
+        <h2 id="cityName">Lahore, PK</h2>
+        <img id="weatherIcon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon">
+        <p class="temp" id="tempDisplay">25°C</p>
+        <p class="condition" id="weatherCondition">Clear Sky</p>
+        
+        <div class="details">
+          <p>Humidity: <span id="humidity">60%</span></p>
+          <p>Wind Speed: <span id="windSpeed">10 m/s</span></p>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; 2026 Weather Forecasting. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <!-- External JavaScript Link -->
+    <script src="script.js"></script>
+  </body>
+</html>
